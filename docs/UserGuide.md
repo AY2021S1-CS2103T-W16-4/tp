@@ -42,7 +42,7 @@ If you can type really quickly, **ATAS** will help you to manage your in-class a
 
 <div markdown="block" class="alert alert-info">
 
-:information_source: **Going forward, to minimize ambiguity, the following terms will be named as such:** <br>
+:information_source: Going forward, to minimize ambiguity, the following terms will be named as such: <br>
 * `classes` will be henceforth referred to as `sessions`.
 * `attendance` (of student(s)) will be henceforth referred to as `presence`.
 
@@ -155,17 +155,10 @@ For the good majority of visual learners, we figured to present information in a
 
 3. Copy the file to the folder you want to use as the home folder for your ATAS. All the data related to ATAS will be stored here.
 
-4. Double-click the file to start the app. The GUI similar to the below image should appear in a few seconds.<br>
-![WelcomePage](images/user-guide/3.1-WelcomePage.png)
+4. Double-click the file to start the app. The GUI similar to the below image should appear in a few seconds. Note how the app contains some sample data.<br>
+   ![StartPage](images/StartPage.png)
 
-<p align="center"> <sub> <b>Figure 3.1</b>: Welcome page </sub> </p>
-
-5. Now click on the Student tab and notice how the app contains some sample data. <br/>
-![StudentSampleData](images/user-guide/3.2-StudentSampleData.png)
-
-<p align="center"> <sub> <b>Figure 4.2.1</b>: Student sample data </sub> </p>
-   
-6. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+5. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
    Some example commands you can try:
 
    * **`liststu`** : Lists out all the students.
@@ -180,7 +173,7 @@ For the good majority of visual learners, we figured to present information in a
 
    * **`exit`** : Exits out of the application.
 
-6. Refer to the [Features](#5-features) below for details of each command.
+6. Refer to the [Features](#features) below for details of each command.
 
 { end of `quick_start` written by: Alvin Chee Teck Weng }
 
@@ -216,7 +209,7 @@ Notes:
 |Colour | Meaning |
  |--------------|-------------|
  | <span style="background-color: #E6E6E6; color: black">Grey</span> | There are no sessions |
- | <span style="background-color: crimson; color: white">Red</span> | Student was not present or did not participate in all the sessions (<100%) |
+ | <span style="background-color: crimson; color: white">Red</span> | Student was not present or did not participated in all the sessions (<100%) |
  | <span style="background-color: green; color: white">Green</span> | Student was present or has participated in all the sessions (100%) |
 
 </div>
@@ -373,7 +366,7 @@ help
 
 :green_book: **Example:**
 
-* `help`
+`help`
 
 </div>
 
@@ -415,7 +408,7 @@ switch TAB_NAME
 
 :green_book: **Example:**
 
-* `switch sessions`
+`switch sessions`
 
 </div>
 
@@ -438,14 +431,6 @@ Chooses a student at random from the student list.
 rng
 ```
 
-<div markdown="block" class="alert alert-success">
-
-:green_book: **Example:**
-
-* `rng`
-
-</div>
-
 **Outcome:** 
 ![523-rng](images/user-guide/5.2.3-Rng.png)
 <p align="center"> <sub> <b>Figure 5.2.3.1</b>: Application view after performing the `rng` command </sub> </p>
@@ -457,11 +442,6 @@ rng
 #### 5.2.4. Undo-ing a command : `undo`
 
 Undoes a command and essentially returns ATAS to the state prior to performing that command.
-
-**Format:**
-```
-undo
-```
 
 <div markdown="block" class="alert alert-info">
 
@@ -481,6 +461,11 @@ undo
 * You cannot `undo` if there is no previous state to return to.
 
 </div>
+
+**Format:**
+```
+undo
+```
 
 <div markdown="block" class="alert alert-success">
 
@@ -513,11 +498,6 @@ Essentially the reverse of undo-ing a command.
 
 You can think of it as performing that very same command you have undone!
 
-**Format:**
-```
-redo
-```
-
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes about the usage of this command:**<br>
@@ -527,6 +507,11 @@ redo
 * You cannot `redo` if there is no forward state to go to.
 
 </div>
+
+**Format:**
+```
+redo
+```
 
 <div markdown="block" class="alert alert-success">
 
@@ -600,13 +585,13 @@ addstu n/NAME m/MATRICULATION_NUMBER e/NUS_EMAIL_ADDRESS [t/TAG]…
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Examples:**
+Examples:
 * `addstu n/John Cena m/A0123456J e/thechamp@u.nus.edu` **(Figure 5.3.1)**
 * `addstu n/Alvina Handsome m/A0123456X e/handsome.alvina@u.nus.edu t/new`
 
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![Addstu](images/user-guide/5.3.1-AddStudent.png)
 <p align="center"> <sub> <b>Figure 5.3.1</b>: Addstu Command </sub> </p>
@@ -633,13 +618,13 @@ findstu KEYWORD [MORE_KEYWORDS]
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Examples:**
+Examples:
 * `findstu bob` returns `Bobby Bob` **(Figure 5.3.2)**
 * `findstu kent ridge` returns `Kent Tan` and `Mark Ridge`<br>
 
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![Findstu](images/user-guide/5.3.2-FindStudent.png)
 <p align="center"> <sub> <b>Figure 5.3.2</b>: Findstu Command </sub> </p>
@@ -655,12 +640,12 @@ liststu
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:**
+Example:
 * `liststu`  **(Figure 5.3.3)**
 
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![Liststu](images/user-guide/5.3.3-ListStudent.png)
 <p align="center"> <sub> <b>Figure 5.3.3</b>: Liststu Command </sub> </p>
@@ -699,7 +684,7 @@ deletestu INDEX
 * `findstu Bob` followed by `deletestu 1` followed by `yes`: Deletes and removes the 1st student from the results of the `findstu Bob` command.
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![DeletestuConfirmation](images/user-guide/5.3.4.1-DeletestuConfirmationPrompt.png)
 <p align="center"> <sub> <b>Figure 5.3.4.1</b>: Confirmation for deleting student 2 </sub> </p>
@@ -719,14 +704,12 @@ Examples:
 
 #### 5.3.5. Editing a student's particulars : `editstu`
 
-
+<div markdown="block" class="alert alert-info">
 
 **Format:**
 ```
 editstu INDEX (n/UPDATED_NAME) (e/UPDATED_EMAIL_ADDRESS) (m/UPDATED_MATRICULATION_NUMBER) (t/UPDATED_TAG)
 ```
-
-<div markdown="block" class="alert alert-info">
 
 **:information_source: Notes about the usage of this command:**<br>
 
@@ -827,9 +810,8 @@ You will be exited from any currently entered session upon using the command.
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Examples:**
+:green_book: Examples:
 * `addses s/tut1 d/12/7/2020`
-* `addses s/lab3 d/2/11/2020`
 
 :bulb: **Tip:** Two sessions cannot have the same name but they can have the same date
 
@@ -869,7 +851,7 @@ You will be exited from any currently entered session upon using the command.
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Examples:**
+:green_book: Examples:
 * `deleteses 1` followed by `no` results in nothing changed.
 * `deleteses 2` followed by `yes` deletes the 2nd session in the session list.
 
@@ -908,7 +890,7 @@ You will be exited from any currently entered session upon using the command.
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:**
+:green_book: Examples:
 * `editses 1 s/Tutorial 6 d/10/10/2020` followed by `yes` edits the 1st session in the session list with a new session name `Tutorial 6` and a new session date `10/10/2020`.
 
 :bulb: **Tip:** The updated session cannot have the same name as any of the other sessions in the list but they can have the same date
@@ -946,7 +928,7 @@ You will be exited from any currently entered session upon using the command.
 
 <div markdown="block" class="alert alert-success">
    
-:green_book: **Example:**
+:green_book: Examples:
 * `clearses` followed by `yes` deletes all the sessions in the session list. 
 
 </div>
@@ -981,7 +963,7 @@ You cannot be in one session and enter that particular session again.
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:**
+:green_book: Examples:
 * `enterses 1` enters the first session and allows you to use PARTICIPATE and PRESENCE commands.
 
 </div>
@@ -992,9 +974,9 @@ You cannot be in one session and enter that particular session again.
 
 { end of `sessions` written by: Alvin Chee Teck Weng }
 
-{ start of `features#current_session` written by: Zhang Sheng Yang }
-
 ### 5.5. Current session
+
+{ start of `features#current_session` written by: Zhang Sheng Yang }
 
 <br/>
 This category consists of features related to students.
@@ -1026,12 +1008,12 @@ participate INDEX_RANGE
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:**
+Examples:
 * `participate 1-4` toggles the participation status of students 1 to 4. **(Figure 5.5.1)**
 
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![Participate](images/user-guide/5.5.1-Participate.png)
 <p align="center"> <sub> <b>Figure 5.5.1</b>: Participate Command </sub> </p>
@@ -1058,12 +1040,12 @@ presence INDEX_RANGE
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:**
+Examples:
 * `presence 1-4` toggles the presence status of students 1 to 4. **(Figure 5.5.2)**
 
 </div>
 
-**Outcome:**
+**Outcome**
 
 ![Presence](images/user-guide/5.5.2-Presence.png)
 <p align="center"> <sub> <b>Figure 5.5.2</b>: Presence Command </sub> </p>
@@ -1108,7 +1090,7 @@ addnote NOTE
 
 :green_book: **Example:**
 
-* `addnote clarify qn 3 with prof`
+`addnote clarify qn 3 with prof`
 
 </div>
 
@@ -1160,8 +1142,7 @@ command + s
 
 <div markdown="block" class="alert alert-success">
 
-:green_book: **Example:** <br>
-Depending on which OS you are using, try following the steps mentioned above.
+:green_book: **Example:** Depending on which OS you are using, try following the steps mentioned above.
 </div>
 
 **Outcome:**
